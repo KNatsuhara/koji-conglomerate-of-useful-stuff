@@ -1,3 +1,3 @@
-# React + TypeScript + Vite
+# Welcome App
 
 Simple Website
