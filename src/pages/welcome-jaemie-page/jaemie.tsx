@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import jaemieImg from "./assets/jaemie_assets/jaemie.jpg";
-import jaemieVid from "./assets/jaemie_assets/jaemie.mp4";
-import "./App.css";
+import jaemieImg from "../../assets/jaemie-assets/jaemie.jpg";
+import jaemieVid from "../../assets/jaemie-assets/jaemie.mp4";
+import "./jaemie.css";
 
 function App() {
   const [count, setCount] = useState(0);

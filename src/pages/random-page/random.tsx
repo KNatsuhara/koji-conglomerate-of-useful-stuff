@@ -1,4 +1,4 @@
-import randomImg from './assets/random_assets/random.jpg';
+import randomImg from '../../assets/random-assets/random.jpg';
 
 function Random() {
   return (

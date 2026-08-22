@@ -1,7 +1,7 @@
-import App from "./App";
-import jaemieThumb from "./assets/jaemie_assets/jaemie.jpg";
-import Random from "./random";
-import randomThumb from "./assets/random_assets/random.jpg";
+import Jaemie from "../welcome-jaemie-page/jaemie";
+import jaemieThumb from "../../assets/jaemie-assets/jaemie.jpg";
+import Random from "../random-page/random";
+import randomThumb from "../../assets/random-assets/random.jpg";
 
 export interface PageConfig {
   path: string;
@@ -15,7 +15,7 @@ export const pages: PageConfig[] = [
     path: "/app",
     title: "Welcome Jaemie",
     thumbnail: jaemieThumb,
-    component: App,
+    component: Jaemie,
   },
   {
     path: "/random",
