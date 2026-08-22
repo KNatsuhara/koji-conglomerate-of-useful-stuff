@@ -1,11 +1,13 @@
-import { useEffect, useState } from 'react'
-import jaemieImg from './assets/jaemie.jpg'
-import jaemieVid from "./assets/jaemie.mp4";
-import './App.css'
+import { useEffect, useState } from "react";
+import jaemieImg from "./assets/jaemie_assets/jaemie.jpg";
+import jaemieVid from "./assets/jaemie_assets/jaemie.mp4";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-  const [hearts, setHearts] = useState<{ id: number; left: number; delay: number }[]>([]);
+  const [count, setCount] = useState(0);
+  const [hearts, setHearts] = useState<
+    { id: number; left: number; delay: number }[]
+  >([]);
   const [showVideo, setShowVideo] = useState(false);
 
   useEffect(() => {
@@ -31,18 +33,21 @@ function App() {
     return () => clearTimeout(timeout);
   }, [count]);
 
-
   return (
     <>
       <section id="center">
         <div className="jaemie">
-          <img src={jaemieImg} className="jaemie" width="384" height="510" alt="Jaemie Pic" />
+          <img
+            src={jaemieImg}
+            className="jaemie"
+            width="384"
+            height="510"
+            alt="Jaemie Pic"
+          />
         </div>
         <div>
           <h1>Hello, Jaemie!</h1>
-          <p>
-            Click for a surprise! 🥳
-          </p>
+          <p>Click for a surprise! 🥳</p>
           {showVideo && (
             <div className="video-overlay" onClick={() => setShowVideo(false)}>
               <button
@@ -59,7 +64,6 @@ function App() {
               />
             </div>
           )}
-
         </div>
 
         <button
@@ -69,12 +73,8 @@ function App() {
         >
           I Love You: {count}
         </button>
-        
-        <button
-          type="button"
-          className="reset"
-          onClick={() => setCount(0)}
-        >
+
+        <button type="button" className="reset" onClick={() => setCount(0)}>
           Reset
         </button>
 
@@ -85,17 +85,16 @@ function App() {
               className="floating-heart"
               style={{
                 left: `${heart.left}%`,
-                animationDelay: `${heart.delay}ms`
+                animationDelay: `${heart.delay}ms`,
               }}
             >
               ❤️
             </span>
           ))}
         </div>
-
       </section>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

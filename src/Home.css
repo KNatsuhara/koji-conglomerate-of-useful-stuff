@@ -1,0 +1,38 @@
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 16px;
+  padding: 24px;
+}
+
+.thumbnail-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.thumbnail-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.thumbnail-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.thumbnail-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+.thumbnail-title {
+  margin: 0;
+  padding: 8px 10px;
+  font-size: 0.9rem;
+  text-align: center;
+}
