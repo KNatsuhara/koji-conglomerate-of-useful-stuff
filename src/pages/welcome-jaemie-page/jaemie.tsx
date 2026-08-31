@@ -3,7 +3,7 @@ import jaemieImg from "../../assets/jaemie-assets/jaemie.jpg";
 import jaemieVid from "../../assets/jaemie-assets/jaemie.mp4";
 import "./jaemie.css";
 
-function App() {
+function Jaemie() {
   const [count, setCount] = useState(0);
   const [hearts, setHearts] = useState<
     { id: number; left: number; delay: number }[]
@@ -97,4 +97,4 @@ function App() {
   );
 }
 
-export default App;
+export default Jaemie;
